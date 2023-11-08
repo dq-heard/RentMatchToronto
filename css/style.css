@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Hoves;
+  src: url(../fonts/TT-Hoves.ttf);
+  format: ("truetype");
+}
+
+@font-face {
+  font-family: InterphasesBold;
+  src: url(../fonts/TT-Interphases-Bold.ttf);
+  format: ("truetype");
+}
+
+@font-face {
+  font-family: Interphases;
+  src: url(../fonts/TT-Interphases.ttf);
+  format: ("truetype");
+}
+
+:root {
+  /* Colors */
+  --deep-blue: #445d9b;
+  --golden-yellow: #fad02c;
+  --dark-gray: #545454;
+}
+
+body {
+  font-family: "Hoves", sans-serif;
+  color: var(--dark-gray);
+}
+
+h1 {
+  font-family: "InterphasesBold", sans-serif;
+}
+
+.navbar-custom {
+  background-color: var(--deep-blue);
+  font-family: "InterphasesBold", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+}
+
+.navbar-brand span,
+.navbar a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar-nav a {
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  color: var(--golden-yellow);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jumbotron {
+  font-family: "Interphases", sans-serif;
+  color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100vh;
+}
+.jumbotron .container {
+  padding-top: 12em;
+  -webkit-animation: heroContent 0.5s linear 0.3s backwards;
+  animation: heroContent 0.5s linear 0.3s backwards;
+}
+.jumbotron .container h1 {
+  font-size: 4rem;
+}
+.jumbotron .container p {
+  font-size: 2rem;
+}
+
+.tron-drop {
+  display: flex;
+  gap: 1rem;
+}
+.tron-drop button {
+  background-color: white;
+  color: var(--dark-gray);
+}
+.dropdown-item:hover,
+.dropdown-item:active {
+  background-color: var(--golden-yellow);
+  color: var(--dark-gray);
+}
