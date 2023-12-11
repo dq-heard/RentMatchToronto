@@ -32,25 +32,31 @@ h1 {
   font-family: "InterphasesBold", sans-serif;
 }
 
+.btn-primary {
+  background-color: var(--golden-yellow);
+  color: var(--dark-gray);
+}
+.btn-primary:hover {
+  background-color: white;
+  color: var(--dark-gray);
+  
+}
+
 .navbar-custom {
   background-color: var(--deep-blue);
   font-family: "InterphasesBold", sans-serif;
 }
-
 .navbar-brand {
   font-weight: bolder;
 }
-
 .navbar-brand span,
 .navbar a {
   color: white;
   text-transform: uppercase;
 }
-
 .navbar-nav a {
   font-size: 15px;
 }
-
 .navbar a:hover {
   color: var(--golden-yellow);
 }
@@ -63,7 +69,6 @@ h1 {
   height: 100%;
   overflow: hidden;
 }
-
 .hero-background video {
   position: absolute;
   top: 0;
@@ -100,6 +105,9 @@ h1 {
 .tron-drop {
   display: flex;
   gap: 1rem;
+  text-align: center;
+  align-items: center;
+  height: 60vh;
 }
 .tron-drop button {
   background-color: white;
@@ -109,4 +117,17 @@ h1 {
 .dropdown-item:active {
   background-color: var(--golden-yellow);
   color: var(--dark-gray);
+}
+
+.tenant{
+  background-color: var(--deep-blue);
+}
+form {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.docs {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
 }
